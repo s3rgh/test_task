@@ -27,5 +27,48 @@
 
 ###Для запуска установить
 
+- [MySQL click for Win](https://dev.mysql.com/downloads/installer/)
+  
+- [MySQL for Linux](https://losst.ru/ustanovka-mysql-ubuntu-16-04) :
 
 
+- обновите списки пакетов
+
+ `sudo apt update`
+- установите необходимые пакеты
+  
+`sudo apt install mysql-server mysql-client`
+- проверить установленную версию
+  
+`mysql -V`
+  
+ - запущена ли служба MySQL
+   
+`sudo systemctl status mysql`
+
+- перед тем как полноценно использовать установленную бд, необходимо выполнить ее первоначальную настройку
+  
+`sudo mysql_secure_installation`
+  
+ - подключиться пользователем root к серверу баз данных из командной строки
+
+`sudo mysql -u root`
+
+- создаем тестовую базу данных
+
+`mysql> CREATE DATABASE testDB;`
+
+
+## Для проверки тестов
+
+Установить maven
+Установить git 
+Хотя вряд ли это не установлено
+
+Выполнить
+
+`git clone https://github.com/s3rgh/test_task.git`
+
+`mvn clean install`
+
+`mvn allure:serve`
