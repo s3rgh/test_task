@@ -7,23 +7,23 @@
    
 ## Описание
 
-`constants/Endpoints.java`  -
+`constants/Endpoints.java`  - ссылка на ресурс и эндпоинты
 
-`entity/Purchase.java`      - 
+`entity/Purchase.java`      - таблица сущности "Покупка" из списка с http://checkme.kavichki.com/
 
-`pages/ShoppingListPage.java` - 
+`pages/ShoppingListPage.java` - класс страницы http://checkme.kavichki.com/ для реализации Page Object
 
-`repository/ShoppingListBD.java` - 
+`repository/ShoppingListBD.java` - класс для взаимодействия с БД
 
-`util/HibernateUtil.java` - 
+`util/HibernateUtil.java` - класс для инициализации сессии с БД
 
-`runner/RunTest.java` - 
+`runner/RunTest.java` - Раннер
 
-`src/test/java/steps` - 
+`src/test/java/steps` - пакет с шагами для реализации тестов
 
-`src/test/resources/features` - 
+`src/test/resources/features` - пакет с "фичами" для cucumber
 
-`src/test/resources/hibernate.cfg.xml` -
+`src/test/resources/hibernate.cfg.xml` - конфиг для соединения с БД
 
 ###Для запуска установить
 
