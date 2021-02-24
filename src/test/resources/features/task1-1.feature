@@ -1,5 +1,5 @@
-Feature: Задание 1-1: Проверка работы с БД
-
+Feature: Задание 1-1 Проверка работы с БД Сравнить записи на странице с содержимым в БД
+  @UI
   Scenario: Сравнить записи на странице с содержимым в БД
     Given Open start page "https://checkme.kavichki.com/"
     And   Start page is opened
@@ -8,4 +8,3 @@ Feature: Задание 1-1: Проверка работы с БД
     And   Read data from database
     And   Check data is correct by rows
     And   Check data is correct by cells
-    #Then  Delete tables

@@ -86,6 +86,7 @@ public class ShoppingListPage {
     public void checkRightFillingCells(String arg0, String arg1, String arg2, String arg3) {
 
         //td[contains(text(), 'test')]/parent::tr
+        //td[contains(text(), 'test')]/parent::tr/td[3]
 
     }
 }

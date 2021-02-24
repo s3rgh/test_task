@@ -102,6 +102,11 @@
             <scope>test</scope>
         </dependency>
         <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>json-schema-validator</artifactId>
+            <version>4.3.1</version>
+        </dependency>
+        <dependency>
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-rest-assured</artifactId>
             <version>2.11.0</version>
@@ -116,7 +121,6 @@
             <artifactId>hibernate-core</artifactId>
             <version>5.4.28.Final</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.junit.vintage/junit-vintage-engine -->
         <dependency>
             <groupId>org.junit.vintage</groupId>
             <artifactId>junit-vintage-engine</artifactId>
@@ -129,7 +133,5 @@
             <version>4.13.1</version>
             <scope>compile</scope>
         </dependency>
-
-
     </dependencies>
 </project>

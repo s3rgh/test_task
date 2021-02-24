@@ -10,16 +10,17 @@ import repository.ShoppingListBD;
 
 public class ShoppingListPageSteps extends TestBase {
 
+
     ShoppingListPage shoppingListPage;
     ShoppingListBD shoppingListBD = new ShoppingListBD();
 
-    @Before
+    @Before("@UI")
     public void start() {
         initialize();
         shoppingListPage = new ShoppingListPage(webDriver);
     }
 
-    @After
+    @After("@UI")
     public void stop() {
         tearDown();
     }
@@ -107,5 +108,6 @@ public class ShoppingListPageSteps extends TestBase {
     @Then("Check is row {string} contains name = {string} number = {string} amount = {string}")
     public void checkIsRowContainsNameNumberAmount(String arg0, String arg1, String arg2, String arg3) {
         shoppingListPage.checkRightFillingCells(arg0, arg1, arg2, arg3);
+
     }
 }
