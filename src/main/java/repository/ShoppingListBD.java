@@ -6,11 +6,7 @@ import org.hibernate.query.NativeQuery;
 import org.junit.Assert;
 import pages.ShoppingListPage;
 import util.*;
-
-import java.util.ArrayList;
 import java.util.List;
-
-import static org.assertj.core.api.Assertions.assertThat;
 
 public class ShoppingListBD {
 
