@@ -49,7 +49,7 @@ public class ShoppingListBD {
             Transaction tx = null;
             try {
                 tx = session.beginTransaction();
-                String sql = "SELECT * FROM PURCHASES";
+                String sql = "SELECT * FROM test.Purchases;";
                 NativeQuery query = session.createSQLQuery(sql);
                 query.addEntity(Purchase.class);
                 list = query.list();
@@ -78,7 +78,7 @@ public class ShoppingListBD {
             Transaction tx = null;
             try {
                 tx = session.beginTransaction();
-                String sql = "SELECT * FROM PURCHASES";
+                String sql = "SELECT * FROM test.Purchases;";
                 NativeQuery query = session.createSQLQuery(sql);
                 query.addEntity(Purchase.class);
                 list = query.list();
@@ -104,7 +104,7 @@ public class ShoppingListBD {
             Transaction tx = null;
             try {
                 tx = session.beginTransaction();
-                String sql = "SELECT * FROM PURCHASES";
+                String sql = "SELECT * FROM test.Purchases;";
                 NativeQuery query = session.createSQLQuery(sql);
                 query.addEntity(Purchase.class);
                 list = query.list();
@@ -135,7 +135,7 @@ public class ShoppingListBD {
             Transaction tx = null;
             try {
                 tx = session.beginTransaction();
-                String sql = "SELECT * FROM PURCHASES";
+                String sql = "SELECT * FROM test.Purchases;";
                 NativeQuery query = session.createSQLQuery(sql);
                 query.addEntity(Purchase.class);
                 list = query.list();
@@ -160,7 +160,7 @@ public class ShoppingListBD {
             Transaction tx = null;
             try {
                 tx = session.beginTransaction();
-                String sql = "SELECT * FROM PURCHASES";
+                String sql = "SELECT * FROM test.Purchases;";
                 NativeQuery query = session.createSQLQuery(sql);
                 query.addEntity(Purchase.class);
                 list = query.list();
@@ -194,7 +194,7 @@ public class ShoppingListBD {
             Transaction tx = null;
             try {
                 tx = session.beginTransaction();
-                String sql = "DROP TABLE PURCHASES";
+                String sql = "DROP TABLE test.Purchases;";
                 NativeQuery query = session.createSQLQuery(sql);
                 query.executeUpdate();
                 tx.commit();
@@ -212,7 +212,7 @@ public class ShoppingListBD {
             Transaction tx = null;
             try {
                 tx = session.beginTransaction();
-                String sql = "UPDATE PURCHASES SET name='blablabla' WHERE id=0;";
+                String sql = "UPDATE test.Purchases SET name='blablabla' WHERE id=0;";
                 NativeQuery query = session.createSQLQuery(sql);
                 query.executeUpdate();
                 tx.commit();
